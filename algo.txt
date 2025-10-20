@@ -16,7 +16,8 @@ Begin
             words ← words + 1
         EndIf
 
-        If ch in ['a','e','i','o','u','A','E','I','O','U'] Then
+        If ch = 'a' OR ch = 'e' OR ch = 'i' OR ch = 'o' OR ch = 'u' 
+           OR ch = 'A' OR ch = 'E' OR ch = 'I' OR ch = 'O' OR ch = 'U' Then
             vowels ← vowels + 1
         EndIf
 
