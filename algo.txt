@@ -1,0 +1,31 @@
+Algorithm SentenceAnalysis
+Variables
+    ch: character
+    length, words, vowels: integer
+
+Begin
+    length ← 0
+    words ← 1
+    vowels ← 0
+
+    Read ch
+    While ch ≠ '.'
+        length ← length + 1
+
+        If ch = ' ' Then
+            words ← words + 1
+        EndIf
+
+        If ch in ['a','e','i','o','u','A','E','I','O','U'] Then
+            vowels ← vowels + 1
+        EndIf
+
+        Read next ch
+    EndWhile
+
+    length ← length + 1   // to count the period
+
+    Write "Length: ", length
+    Write "Words: ", words
+    Write "Vowels: ", vowels
+End
